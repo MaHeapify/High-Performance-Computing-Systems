@@ -1,3 +1,5 @@
+// Write a program in MPI where even ranked process prints "Hello" and odd ranked process prints "World".
+
 #include <mpi.h>
 #include <stdio.h>
 

@@ -1,3 +1,5 @@
+// Write a MPI program to add an array of size N using two processes. Print the result in the root process.
+
 #include <mpi.h>
 #include <stdio.h>
 

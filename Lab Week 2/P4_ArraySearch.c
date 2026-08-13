@@ -1,3 +1,8 @@
+/* 
+	Write a MPI program to read N elements of an array in the root. Search a number in this array using 
+	root and another process. Print the result in the root.
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>

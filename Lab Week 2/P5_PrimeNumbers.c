@@ -1,3 +1,5 @@
+// Write a MPI program to find the prime numbers between 1 and 100 using two processes.
+
 #include <mpi.h>
 #include <stdio.h>
 #include <math.h>

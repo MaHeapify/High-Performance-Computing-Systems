@@ -1,3 +1,5 @@
+// Write a program in MPI to simulate simple calculator. Perform each operation using different processes in parallel.
+
 #include <mpi.h>
 #include <stdio.h>
 

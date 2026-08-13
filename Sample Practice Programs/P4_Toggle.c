@@ -1,3 +1,9 @@
+/*
+    Write a program in MPI to toggle the character of a given string indexed by the rank of the process. 
+    Hint: Suppose the string is HELLO and there are 5 processes, then process 0 toggle 'H' to 'h', process 1 toggle 'E' 
+    to 'e' and so on.
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 

@@ -64,7 +64,7 @@ int main(int argc, char* argv[]) {
 		search(data, dataLength, key, rank);
 	}
 	else if (rank == 1) {
-		key = 24;
+		key = 20;
 
 		// Attach buffer before using MPI_Bsend
 		MPI_Buffer_attach(bbuffer, bsize);

@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
         printf("Process with rank %d computed factorial of %d = %d.", rank, rank, factorial(rank));
     } else {
         // Odd ranked process computes fibonacci of the rank
-        printf("Process with rank %d computed fibonnaci number of %d = %d.", rank, rank, fibonacci(rank));
+        printf("Process with rank %d computed fibonacci number of %d = %d.", rank, rank, fibonacci(rank));
     }
 
     MPI_Finalize();

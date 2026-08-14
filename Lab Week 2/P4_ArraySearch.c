@@ -69,6 +69,7 @@ int main(int argc, char* argv[]) {
 		// Attach buffer before using MPI_Bsend
 		MPI_Buffer_attach(bbuffer, bsize);
 
+		// Buffered send allows to attach a custom buffer and returns after data is copied from application buffer to the allocated buffer
 		MPI_Bsend(&key, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 
 		// Detach buffer after sending

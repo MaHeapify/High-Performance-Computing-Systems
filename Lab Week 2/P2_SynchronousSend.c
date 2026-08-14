@@ -23,6 +23,10 @@ int main(int argc, char* argv[]) {
 	}
 
 	if (rank == 0) {
+		/* 
+			Synchronous send sends a message and blocks until application buffer of sending task is free for reuse and 
+			the destination process has started to receive the message
+		*/
 		MPI_Ssend(&message, (int)strlen(message) + 1, MPI_CHAR, 1, 0, MPI_COMM_WORLD);
 		printf("Process with rank %d sent message %s to process with rank 1.\n", rank, message);
 

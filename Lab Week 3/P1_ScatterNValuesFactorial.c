@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
     printf("The process with rank %d has received the value %d from root process with rank 0 and has computed the factorial: %d", rank, number, factorial(number));
     printf("\n");
     
-    MPI_Finalize();;
+    MPI_Finalize();
 
     return 0;
 }

@@ -61,8 +61,7 @@ int main(int argc, char *argv[]) {
 
     totalEnd = MPI_Wtime();
 
-    if (rank == 0)
-    {
+    if (rank == 0) {
         printf("\nTotal program time = %f seconds.\n", totalEnd - totalStart);
     }
 

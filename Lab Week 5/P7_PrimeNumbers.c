@@ -36,8 +36,7 @@ int main() {
     // Record the start time
     start = omp_get_wtime();
 
-    for (int i = 2; i <= n; i++)
-    {
+    for (int i = 2; i <= n; i++) {
         primeNumbers[i] = checkPrime(i);
     }
 
@@ -53,7 +52,7 @@ int main() {
     start = omp_get_wtime();
 
     #pragma omp parallel for
-    for(int i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++) {
         primeNumbers[i] = checkPrime(i);
     }
 

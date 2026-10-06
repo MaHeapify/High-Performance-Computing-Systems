@@ -25,7 +25,7 @@ int main() {
     }
 
     // Display the populated matrix
-    printf("Input matrix:\n\n");
+    printf("\nInput matrix:\n\n");
     for (int i = 0; i < matSize; i++) {
         for (int j = 0; j < matSize; j++) {
             printf("%d ", mat[i][j]);

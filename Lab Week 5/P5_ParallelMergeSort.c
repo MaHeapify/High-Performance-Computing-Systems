@@ -59,8 +59,7 @@ void mergeSort(int array[], int left, int right) {
     merge(array, left, mid, right);
 }
 
-int main()
-{
+int main() {
     int n;
 
     printf("\nEnter number of elements: ");

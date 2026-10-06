@@ -35,7 +35,7 @@ int main() {
     }
 
     #pragma omp parallel for
-    for(int i = 0; i < randomSize; i++) {
+    for (int i = 0; i < randomSize; i++) {
         int threadId = omp_get_thread_num();
 
         printf("\nThread ID %d computed factorial of %d: %d", threadId, randomNumbers[i], factorial(randomNumbers[i]));

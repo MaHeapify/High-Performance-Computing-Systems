@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void checkPrime(int number, int rank) {
+void checkPrime(int number) {
 	for (int i = 2; i <= sqrt(number); i++) {
 		if (number % i == 0) {
 			return;
@@ -37,7 +37,7 @@ int main(int argc, char* argv[]) {
 
 		// Figure out the prime numbers between 1 - 49
 		for (int i = lower; i < mid; i++) {
-			checkPrime(i, rank);
+			checkPrime(i);
 		}
 
 		MPI_Send(&mid, 1, MPI_INT, 1, 0, MPI_COMM_WORLD);
@@ -49,7 +49,7 @@ int main(int argc, char* argv[]) {
 
 		// Figure out the prime numbers between 50 - 100
 		for (int i = mid; i <= upper; i++) {
-			checkPrime(i, rank);
+			checkPrime(i);
 		}
 	}
 
